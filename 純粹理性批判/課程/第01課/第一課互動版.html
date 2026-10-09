@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#163934"><meta name="description" content="從康德原著出發的繁體中文互動哲學精讀：理性、經驗、休謨與康德的問題。"><title>第一課：我們憑什麼相信自己認識世界？｜康德哲學精讀</title><style>
+:root{color-scheme:light dark;--bg:#f8f6f1;--paper:#fff;--ink:#1f2834;--muted:#68717d;--line:#e5e4df;--accent:#1b655e;--accent-light:#e5f2ed;--warm:#fdf5e7;--shadow:0 14px 45px rgba(28,42,53,.06);--fs:18px}
+@media(prefers-color-scheme:dark){:root{--bg:#141b21;--paper:#1d272e;--ink:#f0f3f1;--muted:#adbbb9;--line:#374149;--accent:#90cfc0;--accent-light:#253d3b;--warm:#302b25;--shadow:none}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;font-size:var(--fs);line-height:1.85;-webkit-text-size-adjust:100%}a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}
+#progress{position:fixed;top:0;left:0;height:4px;background:var(--accent);width:0;z-index:50;transition:width .1s}header{padding:60px 21px 28px;background:linear-gradient(148deg,#163934,#2f5b50);color:#fff}header .wrap{max-width:780px;margin:auto}header .kicker{font-size:.75em;opacity:.78;letter-spacing:.14em}header h1{font-size:clamp(1.7em,5.5vw,2.55em);letter-spacing:-.035em;line-height:1.35;margin:18px 0 15px;font-weight:800}header p{font-size:.92em;opacity:.85;max-width:32em}header .tag{display:inline-block;border:1px solid #ffffff6b;padding:4px 12px;border-radius:22px;font-size:.72em;margin:0 6px 6px 0}
+.top{position:sticky;top:4px;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 12px;box-shadow:0 5px 18px #00000008}.topinner{display:flex;align-items:center;gap:8px;justify-content:space-between;max-width:780px;margin:auto}.top a{text-decoration:none;font-weight:700;font-size:.82em}.top .actions{display:flex;gap:5px}.top button,.test button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;min-width:44px;min-height:40px;cursor:pointer;font-size:.9em;font-weight:600}
+main{max-width:780px;margin:auto;padding:24px 16px 72px}.intro{padding:17px 22px;border:1px solid var(--line);background:var(--paper);border-radius:18px;box-shadow:var(--shadow)}.intro h2{font-size:1.07em;margin:0 0 10px}.jump{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.jump a{text-decoration:none;padding:10px 13px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:.8em;font-weight:600}
+article{margin-top:20px;padding:clamp(20px,4vw,44px);background:var(--paper);border:1px solid var(--line);border-radius:19px;box-shadow:var(--shadow);overflow-wrap:anywhere}article>h1:first-child{display:none}article h2{font-size:1.43em;line-height:1.48;letter-spacing:-.02em;margin:2.4em 0 .9em;padding-top:10px;scroll-margin-top:110px}article h2:first-of-type{margin-top:0}article h3{font-size:1.08em;line-height:1.5;margin:1.75em 0 .6em;scroll-margin-top:100px}article p{margin:0 0 1.1em}article strong{color:var(--accent)}article ul,article ol{padding-left:1.45em;margin:.6em 0 1.25em}li{padding-left:.2em;margin:.35em 0}article blockquote{border-left:4px solid var(--accent);background:var(--accent-light);border-radius:0 12px 12px 0;margin:1.25em 0;padding:15px 18px;font-size:1.08em;font-weight:570}article hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+details{border:1px solid var(--line);border-radius:12px;background:var(--warm);padding:8px 14px;margin:15px 0 23px}summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:.88em;font-weight:700;color:var(--accent)}details[open]{padding-bottom:15px}details p{margin:9px 0!important}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0 1.8em;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;font-size:.84em;line-height:1.6}th,td{text-align:left;padding:12px;vertical-align:top;border-bottom:1px solid var(--line);min-width:100px}th{background:var(--accent-light)}tr:last-child td{border-bottom:0}
+code{background:var(--bg);padding:.1em .3em;border-radius:4px}section.test,section.notebook{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}.test h2,.notebook h2{font-size:1.2em;margin:0 0 10px}.test fieldset{border:0;margin:13px 0 18px;padding:0}.test legend{font-weight:700;margin-bottom:12px}.option{display:flex;gap:12px;align-items:baseline;border:1px solid var(--line);border-radius:10px;padding:12px;margin:8px 0;cursor:pointer}.option:has(input:checked){background:var(--accent-light);border-color:var(--accent)}input[type=radio]{accent-color:var(--accent);transform:scale(1.2)}.primary{background:var(--accent)!important;color:var(--paper)!important;padding:10px 18px!important;min-height:46px!important}.feedback{font-weight:650;padding:12px 15px;background:var(--accent-light);border-radius:10px;margin-top:13px;min-height:3em}.notebook textarea{width:100%;min-height:160px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--ink);font:inherit;font-size:.9em;line-height:1.7;padding:13px;resize:vertical}.notehelp{color:var(--muted);font-size:.76em}footer{max-width:780px;margin:0 auto 45px;padding:0 20px;font-size:.78em;color:var(--muted)}.diagram{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0}.diagram>div{padding:15px 17px;border-radius:12px;background:var(--accent-light);border:1px solid var(--line)}.diagram .arr{text-align:center;border:0;background:none;padding:0;font-weight:800;color:var(--accent)}.diagram strong{display:block;margin-bottom:4px}button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid #d69a30;outline-offset:3px}@media(min-width:650px){.jump{grid-template-columns:repeat(3,1fr)}.diagram{grid-template-columns:1fr 45px 1fr;align-items:center}.diagram .arr{transform:rotate(-90deg)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.top,#progress,.test,.notebook{display:none!important}header{background:white;color:black;padding:12px 0}article{border:0;box-shadow:none}body{background:white;color:black}}
+</style></head>
+<body><div id="progress" aria-hidden="true"></div>
+<header><div class="wrap"><div class="kicker">KANT · 原著精讀 / 01—36</div><h1>第一課：我們憑什麼相信自己認識世界？</h1><p>先從自己的直覺出發，再經過休謨的挑戰，最後真正讀進康德的原著。全程繁體中文；不需要德文基礎。</p><span class="tag">原著 A1・B1</span><span class="tag">約 60–70 分鐘</span><span class="tag">可分段閱讀</span></div></header>
+<nav class="top" aria-label="閱讀工具"><div class="topinner"><a href="#start">⌂ 課程導覽</a><div class="actions"><button id="smaller" aria-label="縮小字體">A−</button><button id="larger" aria-label="放大字體">A＋</button><button id="jumpNotes" aria-label="前往筆記">✎ 筆記</button></div></div></nav>
+<main id="start">
+<section class="intro"><h2>這一課你要帶走什麼？</h2><p>不是先背康德的結論，而是能親自回答：反覆觀察，為什麼還不等於必然？經驗啟動認識，是否代表知識全都出自經驗？</p><div class="jump"><a href="#section-1">① 生活問題</a><a href="#section-2">② 哲學路線</a><a href="#section-3">③ 休謨挑戰</a><a href="#section-4">④ 原著精讀</a><a href="#section-5">⑤ 提出反駁</a><a href="#section-6">⑥ 理解檢核</a></div><div class="diagram" role="group" aria-label="課程推理方向"><div><strong>觀察到的經驗</strong><span>反覆發生的事實</span></div><div class="arr" aria-hidden="true">▼</div><div><strong>我們如何推出知識？</strong><span>必然性從何而來？</span></div></div></section>
+<article aria-label="第一課完整教材"><h1 id="h-0">第一課｜我們憑什麼相信自己認識世界？</h1>
+<blockquote>《純粹理性批判》哲學精讀 01／36<br>預估 60–70 分鐘；適合分成 3–5 次手機閱讀  <br><strong>本課一句話</strong>：我們能從經驗得到許多知識，但「曾經如此」怎麼變成「必然如此」？</blockquote>
+<p><strong>閱讀約定</strong>：下文標示「原典節譯」的句子，是依康德<strong>德文原著</strong>自行翻成繁體中文，不是現成中文譯本；其餘是教師解釋或其他思想家的主張。你完全不必懂德文。頁碼中的 A＝1781 年初版，B＝1787 年第二版。</p>
+<hr>
+<h2 id="section-1">0｜先不要急著讀哲學：一個日常問題（8–10 分鐘）</h2>
+<p>想像你每天出門都按一下電梯按鈕。幾千次以來，它幾乎都會依照你預期的方式運作。</p>
+<p>現在問你：</p>
+<p><strong>A.</strong>「這部電梯過去幾千次都正常運作。」 <strong>B.</strong>「這部電梯下次按下按鈕，<strong>必定</strong>正常運作。」</p>
+<p>你願意相信 A 嗎？多半願意。那 B 呢？你可能非常有信心，卻仍認為不能保證。<strong>這個「非常有把握」與「必然如此」的差距，就是本課的入口。</strong></p>
+<p><strong>暫停 30 秒</strong>：如果有人說：「它一直都準，所以以後一定準。」你會指出這句話漏掉了什麼？</p>
+<details>
+<summary>點開教師提示（先自己想）</summary>
+<p>說「以往成功」是描述已觀察的事情；要說「未來必定成功」，還多假設了「未來會延續過去的規律」。這個假設本身，能否不靠同樣的經驗來證明？</p>
+</details>
+<h3 id="h-30">分開三種主張</h3>
+<div class="table-wrap"><table><thead><tr><th>句子</th><th>目前暫時怎麼看</th></tr></thead><tbody><tr><td>昨天我按電梯，門開了</td><td>單次經驗報告</td></tr><tr><td>類似條件下，這部電梯通常會開</td><td>根據反覆經驗形成的預期</td></tr><tr><td>任何事件都必須有原因</td><td>一個要求<strong>普遍性與必然性</strong>的原則</td></tr></tbody></table></div>
+<p>先不要以為第三句一定真；我們現在只是把它和「習慣上很常發生」分開。</p>
+<hr>
+<h2 id="section-2">1｜為何 18 世紀的哲學家如此在意這個問題？（10–12 分鐘）</h2>
+<p>十七、十八世紀歐洲的數學與自然科學有驚人的進展。哲學家不只是問「世界是什麼」，還問：</p>
+<blockquote><strong>什麼樣的理由，才讓一個判斷配得上『知識』這個名稱？</strong></blockquote>
+<h3 id="h-47">路線一：從理性尋求可靠的起點</h3>
+<p><strong>笛卡兒</strong>嘗試運用有系統的懷疑，尋找即使懷疑也無法否定的確定性；<strong>萊布尼茲</strong>重視理性原則及必然真理。這類思路令人嚮往之處，是數學式證明：不用對每一個例子都親自觀察，仍能得到強而有力的結論。</p>
+<p>但是想一想：<strong>邏輯上正確的推論，要如何保證它真的談到了外在世界？</strong> 如果前提只是自己想像的概念，推論再嚴整也未必能告訴你現實中是否存在某物。</p>
+<blockquote><strong>注意</strong>：「理性主義」是後來教學常用的概括；笛卡兒和萊布尼茲並不是拒絕觀察世界，也不是擁有一套完全相同的學說。</blockquote>
+<h3 id="h-56">路線二：從經驗尋找知識的材料</h3>
+<p><strong>洛克</strong>強調感覺與反省經驗在觀念形成中的角色；<strong>休謨</strong>則追問：我們自以為掌握的「因果必然聯繫」，究竟來自什麼印象？</p>
+<p>這種方法強在不輕易把空洞概念當知識：請告訴我，你憑什麼這樣想？有什麼證據？</p>
+<p>但它也會遇到一個難題：<strong>即使觀察了許多次，也只知道那些已觀察的例子。你憑什麼推及所有未觀察的例子？</strong></p>
+<h3 id="h-64">兩種路線不是投票題</h3>
+<div class="table-wrap"><table><thead><tr><th>問題</th><th>理性優先的典型期待</th><th>經驗優先的典型期待</th></tr></thead><tbody><tr><td>知識從哪裡找到根據？</td><td>理性原則、推理結構</td><td>感覺與實際經驗</td></tr><tr><td>最吸引人之處</td><td>必然性、嚴格推論</td><td>有內容、可檢查</td></tr><tr><td>面臨的危險</td><td>概念可能脫離世界</td><td>歸納無法保證必然</td></tr><tr><td>康德需要的答案</td><td><strong>不是二選一</strong>，而是釐清經驗和認識能力如何共同構成知識</td></tr></tbody></table></div>
+<p><strong>自問</strong>：如果一套理論在邏輯上完全自洽，卻從未接觸經驗，你會把它當作對世界的知識嗎？為什麼？</p>
+<hr>
+<h2 id="section-3">2｜休謨真正刺痛人的地方：歸納問題（12–15 分鐘）</h2>
+<p>你看過一百次：把水加熱到一定條件，它會沸騰。於是你預期第一百零一次也會發生同樣的事。這種從已見到未見的推進，可以叫做<strong>歸納推論</strong>。</p>
+<h3 id="h-81">把論證拆開看</h3>
+<ol>
+<li>我們在過去觀察到某些規律。</li>
+<li>因此我們預期未來或未觀察情況也會遵守那些規律。</li>
+<li>但第 2 步需要一座橋：<strong>尚未觀察的情況，會在相關方面類似已觀察的情況。</strong></li>
+<li>那座橋本身，究竟如何證成？</li>
+</ol>
+<p>你可能會回答：「因為這種推理過去一直很有用。」</p>
+<p>休謨會追問：<strong>這正是再次拿『過去有效』去支持『未來有效』。你是不是在用歸納法替歸納法作保？</strong></p>
+<p>這是<strong>論證正當性</strong>的問題，不是說日常預測必須停止、科學研究一無是處。休謨也要說明人為何自然地形成這類預期——習慣在其中扮演重要角色。</p>
+<h3 id="h-94">更深入的一刀：你究竟「看見」了什麼？</h3>
+<p>把兩顆撞球放在一起，撞擊一次又一次。你能觀察到接觸、先後、運動變化。但你是否「看見」了兩個事件之間的<strong>必然聯結</strong>？還是你只看見一種持續出現的接續？</p>
+<p>不要過度簡化：休謨談的不是「因果全是假象」的一句口號，而是我們對因果推論和必然性的根據，究竟從何而來。</p>
+<p><strong>小練習：請找出循環</strong> 「歸納推論值得信任，因為歷史上它通常成功；所以未來也值得信任。」</p>
+<details>
+<summary>揭曉解析</summary>
+<p>這個論證將「過去的歸納很成功」推廣到「未來的歸納會成功」；然而這一步本身就是歸納。它尚未提出<strong>不先假定歸納可靠</strong>的獨立理由。注意：這不等於歸納在實務上不可用，只表示某類證明尚未成立。</p>
+</details>
+<p><strong>留一個開放問題</strong>：科學可能不需要「絕對必然」，只需要最好、可修正的模型嗎？這是完全值得認真考慮的現代回應，不必急著接受康德答案。</p>
+<hr>
+<h2 id="section-4">3｜真正打開康德原著：不是任何知識都「出自」經驗（12–15 分鐘）</h2>
+<p>我們終於來讀康德。以下三段全部<strong>先給繁體中文</strong>；德文底本存放於本 repo，需要時才校對。</p>
+<h3 id="h-118">原典節譯 A｜1787 年 B 版《導論》第一節，B1</h3>
+<blockquote><strong>「我們的一切認識都從經驗開始，這是毫無疑問的。」</strong></blockquote>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_B_1787_de.txt">德文原典 B 版全文</a>｜<a target="_blank" rel="noopener noreferrer" href="https://www.gutenberg.org/cache/epub/6343/pg6343.html">Project Gutenberg B 版</a></p>
+<p><strong>教師說明</strong>：康德首先承認，對我們人類而言，認識能力需要經驗來啟動。這不是把感官的重要性否定掉。注意「在時間上從何開始」是第一個問題。</p>
+<h3 id="h-126">原典節譯 B｜同節，B1</h3>
+<blockquote><strong>「但是，即使我們的一切認識都隨經驗開始，也不因此全都出自經驗。」</strong></blockquote>
+<p><strong>教師說明</strong>：第二句立刻轉向另一個問題：認識的<strong>構成成分或根據</strong>是否完全由感覺提供？康德提出一個待調查的可能性：感覺給了材料，但我們的認識能力也可能有所貢獻。<strong>這裡提出的是研究方向，不是已經證明其為真。</strong></p>
+<h3 id="h-132">原典節譯 C｜1781 年 A 版《導論》開頭，A1–A2</h3>
+<blockquote><strong>「經驗固然告訴我們事物是怎樣的，卻不告訴我們它必然得這樣，而不能是別樣。」</strong></blockquote>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_A_1781_de.txt">德文原典 A 版全文</a>｜<a target="_blank" rel="noopener noreferrer" href="https://de.wikisource.org/wiki/Critik_der_reinen_Vernunft_%281781%29/Einleitung">1781 年初版導論校核</a></p>
+<p><strong>教師說明</strong>：比較兩版的側重：</p>
+<ul>
+<li><strong>A 版</strong>：從經驗不能直接給出嚴格的必然性，凸顯問題。</li>
+<li><strong>B 版</strong>：從「認識何時開始」和「它由何構成」的區別切入，較清楚地安排讀者的提問。</li>
+</ul>
+<p>這是對這兩段的教學比較，不等於兩版全書只存在這一種差異。</p>
+<h3 id="h-144">用一道具體例子想康德在猜什麼</h3>
+<p>你拿到一副眼鏡。鏡片帶有特定顏色，所有進入視野的事物都會透過鏡片呈現某種色調。</p>
+<p><strong>注意，這只是幫助理解的類比，不是康德學說本身</strong>：康德的問題不是「世界只是我的幻想」，也不只是「大腦把世界染色」，而是更嚴格地問：<strong>一個對象若要成為我們能經驗與認識的對象，是否必須符合某些認識條件？</strong></p>
+<h3 id="h-150">在這裡不要偷跑結論</h3>
+<p>這一課還不能說「所以因果律先天有效」；也不能說「我們根本接觸不到真實」。那都是需要整本《純粹理性批判》繼續論證、也可以繼續反駁的主張。</p>
+<p><strong>本課最重要的拆解</strong>：</p>
+<ul>
+<li><strong>前提／觀察</strong>：經驗確實在時間上啟動人類的認識。</li>
+<li><strong>問題</strong>：這能否推出，認識中的所有結構都取自經驗？</li>
+<li><strong>康德的研究假說</strong>：不能直接推出；認識能力可能對經驗的形成有所貢獻。</li>
+<li><strong>尚待證明</strong>：究竟哪些條件、憑什麼必然、可應用到哪些對象？</li>
+</ul>
+<hr>
+<h2 id="section-5">4｜先把康德放到被告席，而不是神壇（8–10 分鐘）</h2>
+<p><strong>反對意見一：學習或演化不就可以解釋我們的認識能力嗎？</strong> 即使人會主動整理訊息，也未必代表有任何「先天必然」的知識。康德需要的不只是心理形成過程的故事，還要解釋認識的<strong>客觀有效性</strong>。他是否做得到，先保留判斷。</p>
+<p><strong>反對意見二：不必追求必然性，承認知識可修正就好了。</strong> 現代科學常以可檢驗、可修正的模型運作。那麼康德追問嚴格的必要條件，是否過度要求？這是一個真正的哲學分歧，不是答錯。</p>
+<p><strong>反對意見三：眼鏡比喻會不會把世界變成主觀投射？</strong> 非常可能！這正是它的限制。以後讀「先驗感性論」「範疇的先驗演繹」時，要緊盯康德如何區分個人感覺與客觀經驗。</p>
+<p><strong>你來選一題回答</strong>：上述哪一個反對意見最有力？你會要求康德拿出什麼證據或論證？</p>
+<hr>
+<h2 id="section-6">5｜理解檢核：不要背標準答案（5–8 分鐘）</h2>
+<p><strong>題 1</strong>：「我昨天看見日出，因此明天日出是邏輯上必然的。」哪個地方多跨出一步？</p>
+<details><summary>參考回答</summary>由已觀察到的個案，推進到未觀察未來的必然性；需要額外論證，不能只重複「過去如此」。</details>
+<p><strong>題 2</strong>：下面兩句差在哪？</p>
+<ul>
+<li>甲：「知識隨經驗開始。」</li>
+<li>乙：「知識的所有成分都由經驗提供。」</li>
+</ul>
+<details><summary>參考回答</summary>甲談認識何時被啟動；乙談認識的來源與構成。甲不邏輯蘊涵乙，正是 B1 要讀者追究的差別。</details>
+<p><strong>題 3</strong>：休謨反對什麼？</p>
+<ul>
+<li>A. 人不應該做任何預測</li>
+<li>B. 以過去的規律為未來必然性提供不循環的論證很困難</li>
+<li>C. 科學觀察毫無價值</li>
+</ul>
+<details><summary>參考回答</summary>B 最接近本課核心。這不等於否定習慣形成的預期，也不是說人不該從事科學。</details>
+<p><strong>題 4</strong>：用一句話說出你目前最想質疑康德的地方。</p>
+<details><summary>教師建議</summary>例：「就算認識能力參與組織經驗，為何那些組織規則必然適用於所有可能經驗？」這一問會通往後來的先驗演繹。</details>
+<hr>
+<h2 id="section-7">6｜這一課在整本書的地圖上（3 分鐘）</h2>
+<ul>
+<li><strong>今天</strong>：我們看見理性與經驗的張力，也讀到康德在 A1 和 B1 定位問題。</li>
+<li><strong>第二課</strong>：康德如何提出著名的思考方向翻轉？精讀第二版序言 <strong>Bxvi–Bxvii</strong>。</li>
+<li><strong>第三～五課</strong>：「先天」「綜合判斷」究竟是什麼，為什麼數學與自然科學會被拉進來？</li>
+<li><strong>第六～十七課</strong>：空間、時間、範疇和先驗演繹如何試圖兌現「認識能力有貢獻」？</li>
+<li><strong>第五階段</strong>：理性在哪些地方會越界，產生無法由經驗支持的主張？</li>
+</ul>
+<h3 id="h-211">本課可帶走的三句話</h3>
+<ol>
+<li><strong>反覆出現</strong>不是<strong>邏輯必然</strong>。</li>
+<li><strong>隨經驗開始</strong>不等於<strong>全由經驗產生</strong>。</li>
+<li>康德要做的不是消滅經驗，而是研究<strong>經驗成為知識的條件</strong>；他的研究能否成功，仍要靠後續論證檢驗。</li>
+</ol>
+<h3 id="h-216">一分鐘學習札記</h3>
+<p>請留下：</p>
+<ul>
+<li>今天最改變我想法的一點：</li>
+<li>我仍然不相信的一點：</li>
+<li>我想追問康德的一個問題：</li>
+</ul>
+<h2 id="section-8">來源與延伸（選讀，不是作業）</h2>
+<ol>
+<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_B_1787_de.txt">本 Repository：B 版德文全文</a>、<a target="_blank" rel="noopener noreferrer" href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_A_1781_de.txt">A 版德文全文</a>、<a target="_blank" rel="noopener noreferrer" href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/SOURCES.md">原典匯入紀錄</a>。</li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://www.gutenberg.org/ebooks/6343">Project Gutenberg：1787 年 B 版</a>。</li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://de.wikisource.org/wiki/Critik_der_reinen_Vernunft_%281781%29/Einleitung">德語維基文庫：1781 年初版《導論》</a>。</li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/archives/fall2022/entries/kant-hume-causality/">Stanford Encyclopedia of Philosophy：康德與休謨的因果性問題</a>。</li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/archives/fall2024/entries/induction-problem/">Stanford Encyclopedia of Philosophy：歸納問題</a>。</li>
+</ol>
+<blockquote>重要翻譯註記：原文節選由本課直接依公共領域德文文本重譯，文字為教學用途，不表示此即唯一正確的中文解釋。本文未直接轉貼現代出版中文譯本。課程 01 暫不安排影片：影片容易先灌輸結論，這次優先練習自己提出問題；後續有合適且具中文字幕的影片再補充。</blockquote></article>
+<section class="test" aria-label="互動練習"><h2>🎯 互動理解測驗</h2><p>不計分、不限次數。先選，再看為什麼。</p>
+<div class="quiz" data-answer="b" data-explain="「以前如此」是描述過去；「以後也必然如此」需要尚未證成的橋樑。"><fieldset><legend>1. 為什麼一千次成功不能直接證明第一千零一次必然成功？</legend><label class="option"><input name="q1" type="radio" value="a"> 因為所有觀察一定都是假的</label><label class="option"><input name="q1" type="radio" value="b"> 因為從已觀察到未觀察之間，還有推論前提需要辯護</label><label class="option"><input name="q1" type="radio" value="c"> 因為邏輯學根本沒有作用</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+<div class="quiz" data-answer="a" data-explain="康德 B1 區分的是認識啟動的時間條件，與認識的全部構成來源；前者不推出後者。"><fieldset><legend>2. 康德在 B1 特別區分什麼？</legend><label class="option"><input name="q2" type="radio" value="a"> 認識隨經驗開始，與認識全由經驗產生</label><label class="option"><input name="q2" type="radio" value="b"> 眼睛和耳朵哪個更可信</label><label class="option"><input name="q2" type="radio" value="c"> 數學與科學哪個比較重要</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+<div class="quiz" data-answer="c" data-explain="本課刻意不替康德預先宣告成功。認識能力是否真的提供客觀有效的先天條件，要等後續原著的長篇論證。"><fieldset><legend>3. 哪種讀法最符合本課精神？</legend><label class="option"><input name="q3" type="radio" value="a"> 康德一定正確，背下來就好</label><label class="option"><input name="q3" type="radio" value="b"> 休謨否定科學，因此不用再思考</label><label class="option"><input name="q3" type="radio" value="c"> 先理解問題與假說，之後再檢驗康德能否論證成功</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+</section>
+<section class="notebook" id="notes"><h2>✎ 我的第一課哲學筆記</h2><p>只要留下一個真正困擾你的問題，就值得。這不是交作業。</p><textarea id="myNote" aria-label="個人課程筆記" placeholder="今天我最不確定的是……&#10;&#10;如果我要反對康德，我會說……&#10;&#10;下次我要問……"></textarea><div class="notehelp" id="noteStatus">筆記只存在這部裝置的此瀏覽器，不會同步到 GitHub。瀏覽器清除網站資料可能遺失。</div><button type="button" id="copy" class="primary">複製我的筆記</button></section>
+</main><footer>本教材為哲學教學用自行節譯；不取用受保護的當代中文出版譯文。原典引用頁碼 A1–A2、B1；資料來源與延伸連結見正文。單檔 HTML 可離線開啟，外部原典連結需要網路。</footer>
+<script>
+(function(){
+const root=document.documentElement;
+const progress=document.getElementById('progress');
+function updateProgress(){let m=document.documentElement.scrollHeight-innerHeight;progress.style.width=(m<=0?100:Math.min(100,Math.max(0,100*scrollY/m)))+'%';}
+addEventListener('scroll',updateProgress,{passive:true});addEventListener('resize',updateProgress);updateProgress();
+let size=18;
+document.getElementById('larger').addEventListener('click',()=>{size=Math.min(24,size+1);root.style.setProperty('--fs',size+'px')});
+document.getElementById('smaller').addEventListener('click',()=>{size=Math.max(15,size-1);root.style.setProperty('--fs',size+'px')});
+document.getElementById('jumpNotes').addEventListener('click',()=>document.getElementById('notes').scrollIntoView({behavior:'smooth'}));
+document.querySelectorAll('.quiz').forEach(box=>{box.querySelector('button').addEventListener('click',()=>{const ans=box.querySelector('input:checked'),out=box.querySelector('.feedback');out.hidden=false;if(!ans){out.textContent='請先選一個答案，再檢查。';return;}out.textContent=(ans.value===box.dataset.answer?'✓ 你抓到關鍵了。 ':'再想想： ')+box.dataset.explain;});});
+const area=document.getElementById('myNote'),status=document.getElementById('noteStatus'),key='kant_krv_lesson01_note_v1';
+try{area.value=localStorage.getItem(key)||'';area.addEventListener('input',()=>{localStorage.setItem(key,area.value);status.textContent='已儲存於這部裝置的瀏覽器（不會同步到 GitHub）。';});}catch(e){status.textContent='此瀏覽器目前不允許儲存，請使用下方複製功能保存筆記。';}
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(area.value);status.textContent='筆記已複製。'}catch(e){area.focus();area.select();status.textContent='請長按選取文字並複製。';}});
+})();
+</script>
+</body></html>
