@@ -25,3 +25,11 @@
 ## 手機閱讀第一課
 
 建議直接開啟[完整中文教材 Markdown](課程/第01課/第一課教材.md)，在 GitHub 手機版就能閱讀，提示可展開。若想使用可輸入筆記、調整字級、作答的互動介面，下載[單檔 HTML](課程/第01課/第一課互動版.html)後在瀏覽器開啟。互動版筆記只在該瀏覽器本機儲存，不自動上傳 GitHub；請自行備份。
+
+## GitHub Pages 課程網站
+
+- [已準備的網站首頁（HTML 原始檔）](../../docs/index.html)
+- [已準備的第一課互動頁（HTML 原始檔）](../../docs/lessons/01/index.html)
+- [啟用網站與日後新增課程的操作說明](課程/GitHub_Pages_部署與更新.md)
+
+部署採 **main /docs**，並且只發布公開教材，不把整個私人儲存庫當成網站目錄。需在 GitHub Settings → Pages 首次啟用；尚未確認網站已上線。GitHub Pages 的網站內容可能公開，即使此 Repository 仍為 Private。
