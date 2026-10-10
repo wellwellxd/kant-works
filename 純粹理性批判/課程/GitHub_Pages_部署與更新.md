@@ -1,8 +1,9 @@
 # 課程網站：GitHub Pages 部署與更新
 
 ## 已建好的網站檔案
-- [網站首頁](../../../docs/index.html)：含 7 階段 / 36 堂課目錄，第一課可點擊
+- [網站首頁](../../../docs/index.html)：含 7 階段 / 36 堂課目錄，第一、二課可點擊
 - [第一課互動網頁](../../../docs/lessons/01/index.html)：手機適配、目錄、答案揭曉、三題測驗與個人筆記
+- [第二課互動網頁](../../../docs/lessons/02/index.html)：哥白尼式轉向、認識模型切換圖、四題測驗與個人筆記
 - [停用 Jekyll 標記](../../../docs/.nojekyll)：使 GitHub Pages 原樣發布靜態 HTML
 
 ## 啟用（儲存庫管理者需操作一次）
@@ -13,17 +14,17 @@
 5. 啟用成功後，預期網站網址是：
    - 首頁：https://wellwellxd.github.io/kant-works/
    - 第一課：https://wellwellxd.github.io/kant-works/lessons/01/
+   - 第二課：https://wellwellxd.github.io/kant-works/lessons/02/
 
-### 關於私人 Repository 與可見度
-- 本專案 Repository 仍維持 Private，沒有改動。
-- GitHub Pages 從私人 Repository 發布通常需要 GitHub Pro、Team 或 Enterprise 等適用方案；若介面沒有開放來源選擇，先確認方案支援。
-- **一般 GitHub Pages 網站對網際網路公開，即使來源 Repository 是 Private**。本專案只指定 /docs 為發布資料夾，避免把所有原典、課程開發筆記等內容一起公開；但 /docs 中的所有資源都應視為公開內容。
+### 關於 Repository 與可見度
+- 本專案目前為 **Public**（使用者確認符合期待），因此 GitHub 儲存庫內所有原典、課程檔案及提交紀錄都可被公開檢視。
+- GitHub Pages 網站也應被視為公開；目前只從 `/docs` 發布網頁，但這不代表儲存庫內其他文件是私人內容。
 - 本站頁面設有 noindex 宣告，這不是存取控制，也不能保證搜尋引擎永不收錄。
 
 ## 日後新增課程
-1. 先在 `純粹理性批判/課程/第02課/` 建立原著精讀計畫、完整中文教材和互動版 HTML。
-2. 把**已準備好公開**的 HTML 放到 `docs/lessons/02/index.html`。
-3. 更新 `docs/index.html`，把第二課改成可點擊連結 `./lessons/02/`。
+1. 先在 `純粹理性批判/課程/第XX課/` 建立原著精讀計畫、完整中文教材和互動版 HTML。
+2. 把 HTML 放到 `docs/lessons/XX/index.html`。
+3. 更新 `docs/index.html`，把新課改成可點擊連結 `./lessons/XX/`。
 4. 提交到 main 後，GitHub Pages 會按來源分支更新網站。
 5. 重要：`docs/` 不是私人的筆記存放處，尤其不要公開學生個人提問紀錄、帳號、token、授權文件等。
 
@@ -37,6 +38,7 @@
 ## 狀態
 - [x] 首頁靜態 HTML 提交至 main/docs
 - [x] 第一課互動 HTML 提交至 main/docs
+- [x] 第二課互動 HTML 提交至 main/docs，首頁與第一課新增對應連結
 - [x] .nojekyll 已加入
-- [ ] 在 GitHub Settings → Pages 選定 main /docs，確認正式部署
+- [ ] 再次確認 GitHub Settings → Pages 的目前部署來源及狀態（此處無設定存取權）
 - [ ] 驗證公開網站網址已能成功讀取
