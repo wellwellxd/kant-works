@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#163934"><meta name="description" content="從康德 1787 年第二版序言出發，讀懂哥白尼式轉向、科學實驗、感性與知性以及知識界限。"><meta name="robots" content="noindex,follow"><title>第二課：哥白尼式轉向——是我們配合世界，還是世界配合我們？｜康德哲學精讀</title><style>
+:root{color-scheme:light dark;--bg:#f8f6f1;--paper:#fff;--ink:#1f2834;--muted:#68717d;--line:#e5e4df;--accent:#1b655e;--accent-light:#e5f2ed;--warm:#fdf5e7;--shadow:0 14px 45px rgba(28,42,53,.06);--fs:18px}
+@media(prefers-color-scheme:dark){:root{--bg:#141b21;--paper:#1d272e;--ink:#f0f3f1;--muted:#adbbb9;--line:#374149;--accent:#90cfc0;--accent-light:#253d3b;--warm:#302b25;--shadow:none}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;font-size:var(--fs);line-height:1.85;-webkit-text-size-adjust:100%}a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}
+#progress{position:fixed;top:0;left:0;height:4px;background:var(--accent);width:0;z-index:50;transition:width .1s}header{padding:60px 21px 28px;background:linear-gradient(148deg,#163934,#2f5b50);color:#fff}header .wrap{max-width:780px;margin:auto}header .kicker{font-size:.75em;opacity:.78;letter-spacing:.14em}header h1{font-size:clamp(1.7em,5.5vw,2.55em);letter-spacing:-.035em;line-height:1.35;margin:18px 0 15px;font-weight:800}header p{font-size:.92em;opacity:.85;max-width:32em}header .tag{display:inline-block;border:1px solid #ffffff6b;padding:4px 12px;border-radius:22px;font-size:.72em;margin:0 6px 6px 0}
+.top{position:sticky;top:4px;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 12px;box-shadow:0 5px 18px #00000008}.topinner{display:flex;align-items:center;gap:8px;justify-content:space-between;max-width:780px;margin:auto}.top a{text-decoration:none;font-weight:700;font-size:.82em}.top .actions{display:flex;gap:5px}.top button,.test button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;min-width:44px;min-height:40px;cursor:pointer;font-size:.9em;font-weight:600}
+main{max-width:780px;margin:auto;padding:24px 16px 72px}.intro{padding:17px 22px;border:1px solid var(--line);background:var(--paper);border-radius:18px;box-shadow:var(--shadow)}.intro h2{font-size:1.07em;margin:0 0 10px}.jump{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}.jump a{text-decoration:none;padding:10px 13px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:.8em;font-weight:600}
+article{margin-top:20px;padding:clamp(20px,4vw,44px);background:var(--paper);border:1px solid var(--line);border-radius:19px;box-shadow:var(--shadow);overflow-wrap:anywhere}article>h1:first-child{display:none}article h2{font-size:1.43em;line-height:1.48;letter-spacing:-.02em;margin:2.4em 0 .9em;padding-top:10px;scroll-margin-top:110px}article h2:first-of-type{margin-top:0}article h3{font-size:1.08em;line-height:1.5;margin:1.75em 0 .6em;scroll-margin-top:100px}article p{margin:0 0 1.1em}article strong{color:var(--accent)}article ul,article ol{padding-left:1.45em;margin:.6em 0 1.25em}li{padding-left:.2em;margin:.35em 0}article blockquote{border-left:4px solid var(--accent);background:var(--accent-light);border-radius:0 12px 12px 0;margin:1.25em 0;padding:15px 18px;font-size:1.08em;font-weight:570}article hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+details{border:1px solid var(--line);border-radius:12px;background:var(--warm);padding:8px 14px;margin:15px 0 23px}summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:.88em;font-weight:700;color:var(--accent)}details[open]{padding-bottom:15px}details p{margin:9px 0!important}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0 1.8em;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;font-size:.84em;line-height:1.6}th,td{text-align:left;padding:12px;vertical-align:top;border-bottom:1px solid var(--line);min-width:100px}th{background:var(--accent-light)}tr:last-child td{border-bottom:0}
+code{background:var(--bg);padding:.1em .3em;border-radius:4px}section.test,section.notebook{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}.test h2,.notebook h2{font-size:1.2em;margin:0 0 10px}.test fieldset{border:0;margin:13px 0 18px;padding:0}.test legend{font-weight:700;margin-bottom:12px}.option{display:flex;gap:12px;align-items:baseline;border:1px solid var(--line);border-radius:10px;padding:12px;margin:8px 0;cursor:pointer}.option:has(input:checked){background:var(--accent-light);border-color:var(--accent)}input[type=radio]{accent-color:var(--accent);transform:scale(1.2)}.primary{background:var(--accent)!important;color:var(--paper)!important;padding:10px 18px!important;min-height:46px!important}.feedback{font-weight:650;padding:12px 15px;background:var(--accent-light);border-radius:10px;margin-top:13px;min-height:3em}.notebook textarea{width:100%;min-height:160px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--ink);font:inherit;font-size:.9em;line-height:1.7;padding:13px;resize:vertical}.notehelp{color:var(--muted);font-size:.76em}footer{max-width:780px;margin:0 auto 45px;padding:0 20px;font-size:.78em;color:var(--muted)}.diagram{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0}.diagram>div{padding:15px 17px;border-radius:12px;background:var(--accent-light);border:1px solid var(--line)}.diagram .arr{text-align:center;border:0;background:none;padding:0;font-weight:800;color:var(--accent)}.diagram strong{display:block;margin-bottom:4px}button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid #d69a30;outline-offset:3px}@media(min-width:650px){.jump{grid-template-columns:repeat(3,1fr)}.diagram{grid-template-columns:1fr 45px 1fr;align-items:center}.diagram .arr{transform:rotate(-90deg)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.top,#progress,.test,.notebook{display:none!important}header{background:white;color:black;padding:12px 0}article{border:0;box-shadow:none}body{background:white;color:black}}
+
+.contrast{margin-top:20px;padding:clamp(18px,4vw,32px);border:1px solid var(--line);background:var(--paper);border-radius:18px}
+.contrast h2{font-size:1.2em;margin:0 0 8px}.contrast p{font-size:.9em;margin:0 0 12px}.model-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
+.model-tabs button{cursor:pointer;flex:1 1 165px;padding:13px 12px;min-height:48px;border-radius:12px;border:1px solid var(--line);background:var(--bg);font-size:.86em;font-weight:700;color:var(--ink)}
+.model-tabs button.active{border-color:var(--accent);background:var(--accent-light);color:var(--accent)}
+.model-viz{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 15px}
+.model-viz svg{display:block;width:100%;max-width:410px;margin:0 auto;height:auto}.model-answer{font-size:.86em;line-height:1.7}.model-answer p{color:var(--muted);margin:4px 0}
+</style></head>
+<body><div id="progress" aria-hidden="true"></div>
+<header><div class="wrap"><div class="kicker"><a href="../../" style="color:#e8f2ed;text-decoration:none">← 課程目錄</a>　·　KANT · 原著精讀 / 02—36</div><h1>第二課：哥白尼式轉向——是我們配合世界，還是世界配合我們？</h1><p>不只背下「世界符合我們的認識」，而是從 Bxiii–Bxviii 的原文逐步讀懂康德提出的問題、實驗方法與仍然必須證明的事。</p><span class="tag">原著 Bxiii–Bxviii</span><span class="tag">約 75–90 分鐘</span><span class="tag">可分段閱讀</span></div></header>
+<nav class="top" aria-label="閱讀工具"><div class="topinner"><a href="../../">⌂ 課程目錄</a><div class="actions"><button id="smaller" aria-label="縮小字體">A−</button><button id="larger" aria-label="放大字體">A＋</button><button id="jumpNotes" aria-label="前往筆記">✎ 筆記</button></div></div></nav>
+<main id="start">
+<section class="intro"><h2>這一課要解決什麼？</h2><p>上次我們發現「反覆發生」不等於「必然」。今天我們要理解康德為什麼試著改變研究假設：如果可被我們經驗的對象必須符合認識的必要條件，能否據此解釋先天知識？</p><div class="jump"><a href="#section-1">00 回到難題</a><a href="#section-2">01 哥白尼</a><a href="#section-3">02 科學方法</a><a href="#section-4">03 精讀 Bxvi</a><a href="#section-5">04 兩層條件</a><a href="#section-6">05 反對意見</a><a href="#model">↔ 轉向圖解</a><a href="#notes">✎ 我的筆記</a></div></section>
+<section class="contrast" id="model" aria-label="康德轉向互動對照">
+<h2>改變方向，問題會怎麼變？</h2>
+<p>點選兩個假設，看看康德想解決的難題為何改變。這是教學模型，不是原著的完整論證。</p>
+<div class="model-tabs" role="group" aria-label="選擇思考模式"><button type="button" id="old" class="active" aria-pressed="true">① 原來的假設</button><button type="button" id="new" aria-pressed="false">② 康德的試驗</button></div>
+<div class="model-viz">
+<svg id="modelSvg" viewBox="0 0 320 126" role="img" aria-label="可切換的認識關係示意圖"><rect x="7" y="19" width="112" height="76" rx="12" fill="var(--accent-light)" stroke="var(--accent)" stroke-width="1.5"/><rect x="200" y="19" width="112" height="76" rx="12" fill="var(--accent-light)" stroke="var(--accent)" stroke-width="1.5"/><text x="63" y="51" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)">認識能力</text><text x="63" y="72" text-anchor="middle" font-size="11" fill="var(--muted)">條件／規則</text><text x="256" y="51" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)">對象</text><text x="256" y="72" text-anchor="middle" font-size="11" fill="var(--muted)">可能經驗的對象</text><path id="arrowLine" d="M 194 57 L 126 57" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none"/><path id="arrowTip" d="M 128 49 L 119 57 L 128 65" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+<div class="model-answer" aria-live="polite" id="modelAnswer"><strong>起點：認識須符合對象</strong><p>如果先把對象當成完全獨立於我們認識方式的已知物，怎麼能在尚未經驗它們之前，確定它們必須具有哪些性質？</p></div>
+</div></section>
+<article aria-label="第二課完整教材"><h1 id="h-0">第二課｜哥白尼式轉向：是我們配合世界，還是世界配合我們？</h1>
+<blockquote><strong>《純粹理性批判》原著精讀 02 / 36</strong><br>建議 75–90 分鐘，可分成 6 段完成。<br><strong>本課的問題：</strong> 我們為什麼有可能在尚未觀察每一個事物之前，就知道某些對象必須符合的條件？</blockquote>
+<blockquote><strong>閱讀約定：</strong> 所有原典先以繁體中文呈現。「原典節譯」為本課對康德 1787 年德文第二版（B 版）的自行翻譯；標準頁碼如 <strong>Bxvi</strong>。其他內容分清「教師解說」「教學類比」「反對意見」。不需要德文能力。完整德文可由本 Repository <a href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_B_1787_de.txt" target="_blank" rel="noopener">B 版原著</a> 另行校核。</blockquote>
+<hr>
+<h2 id="section-1">00｜承接第一課：我們究竟缺少哪個答案？（約 8 分鐘）</h2>
+<p>上一課，你可能接受這一點：<strong>「一千次如此」並不等於「必然如此」。</strong> 休謨讓我們看到：想把經驗中一再出現的規律提升成無條件的必然關係，並不容易。</p>
+<p>現在換一個角度：</p>
+<p>假設有位科學家相信，每一個能作為<strong>經驗中的事件</strong>的東西，都必須處在某種規律的時間關係之中。他憑什麼說「每一個」？</p>
+<ul>
+<li>他實際觀察過所有事件嗎？顯然沒有。</li>
+<li>他只是對「事件」這個字做定義嗎？如果只是文字遊戲，又如何真正談到經驗世界？</li>
+<li><strong>會不會是因為：要讓某件事「成為我們能經驗、能判定的事件」，認識能力本身就已經有一些必須滿足的條件？</strong></li>
+</ul>
+<p>最後一個問題，是康德準備試探的方向。<strong>請留意：提出一個可能的解法，和證明解法正確，是不同的工作。</strong></p>
+<h3 id="h-25">開場練習</h3>
+<blockquote>「所有你能拍到的照片，都必須符合你相機成像系統的某些條件。」</blockquote>
+<p>即使你還沒拍完世界上所有照片，這句話仍然似乎有道理。為什麼？</p>
+<details><summary>先自己回答，再看教師提示</summary>
+<p>因為我們不是根據「碰巧看過很多照片」才知道這件事，而是在考察「透過這部相機形成照片」的條件。<strong>但這只是教學類比</strong>：康德要談的是人類可能經驗的基本條件，不是某款相機可拆換的硬體設定。</p>
+</details>
+<hr>
+<h2 id="section-2">01｜先認識真正的哥白尼，再認識康德的借用（約 10 分鐘）</h2>
+<p>你看見太陽每天從東邊升起，似乎是太陽繞著地球移動。如果把觀看者想成靜止，便會傾向把所見的天體運動全都歸給天體本身。</p>
+<p>哥白尼的日心體系提供了一種新的解釋：<strong>觀察者所在的地球本身也在運動</strong>。這使人們能以不同的模型組織和理解天文觀測。哥白尼原來的天文模型並非最終正確版本；後來的克卜勒等人又修正了它。</p>
+<p>在這裡，康德想借用的主要不是「地球繞太陽」這條物理知識，而是<strong>研究策略</strong>：</p>
+<blockquote>當原來對觀察資料的解釋方式陷入困境，就試著改變我們預設的方向，看看問題能否得到新的解釋。</blockquote>
+<h3 id="h-49">不要被這個比喻騙了</h3>
+<p>在天文學裡，地球並不是因為人這樣想就開始轉動；我們改變的是<strong>用來說明觀測的假設</strong>。</p>
+<p>在哲學裡，康德也不是說：我幻想杯子變成黃金，它就會變黃金。 他要問的是：<strong>如果要有「作為我們認識對象的杯子」，它需要滿足哪些感性與知性的條件？</strong></p>
+<blockquote><strong>關鍵分界：</strong>「我們所能經驗的對象必須符合某些認識條件」不等於「物自身的存在與所有性質都由我們製造」。</blockquote>
+<p><strong>你來思考：</strong>如果我換了望遠鏡或改變觀測位置，觀測結果會改變。這是否已經證明星體「只存在於我的眼中」？當然沒有。為什麼？</p>
+<hr>
+<h2 id="section-3">02｜康德為什麼羨慕數學和實驗科學？（約 12 分鐘）</h2>
+<p>1787 年第二版序言一開始，康德比較幾類知識的發展。他認為數學和自然科學已找到穩定的方法，而當時的形上學卻仍因核心爭議反覆爭論。這是<strong>康德對當時學術狀況的判斷</strong>，不是我們必須照單全收的歷史評價。</p>
+<h3 id="h-66">原典節譯 ①｜第二版序言，B xiii</h3>
+<blockquote>「理性只洞察它自己依照設計所產生的東西；它必須帶著原則，依不變的法則先行，並迫使自然回答它的問題，而不能只是讓自然牽著自己走。」</blockquote>
+<p>— <strong>康德原典節譯，Bxiii</strong>（節選；完整德文請見<a href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_B_1787_de.txt" target="_blank" rel="noopener">原典</a>）</p>
+<h3 id="h-72">用你也能做的科學思考實驗來看</h3>
+<p>假設你想知道：植物長得比較快，是因為<strong>光線</strong>，還是因為<strong>水分</strong>？</p>
+<p><strong>方法 A：</strong>每天經過陽台，隨意看幾眼，記錄哪一盆長得最好。 <strong>方法 B：</strong>先提出「光線差異影響生長」的假說，盡量控制土壤、水量等條件，再比較植物的變化。</p>
+<p>方法 B 比較容易判斷哪一個因素產生影響。你<strong>先安排問題的方式</strong>，才能讓觀察成為有解釋力的證據。</p>
+<p>但注意：</p>
+<ul>
+<li>科學家規劃實驗，<strong>並不能決定實驗結果</strong>；自然可能否定假說。</li>
+<li>這段原文談的是科學方法的啟示；它<strong>還不足以證明</strong>所有經驗對象都必須符合某些先天概念。</li>
+<li>康德把從科學得到的啟發進一步搬到形上學，這一步本身需要論證。</li>
+</ul>
+<h3 id="h-87">停下來回答</h3>
+<p><strong>科學家「先有理論／問題」是不是就代表他們只會看到自己想看的結果？</strong></p>
+<details><summary>教師回應</summary>
+<p>未必。好的實驗會盡可能安排讓假說可能被推翻的檢驗。帶著問題來接觸自然，和任意替自然編造答案，恰恰不同。這個差異也是接下來理解康德的關鍵。</p>
+</details>
+<hr>
+<h2 id="section-4">03｜逐段讀康德：他到底把什麼倒轉了？（約 18 分鐘）</h2>
+<p>這一節是本課的核心。我們沿著康德原文的步驟走，不先背「哥白尼革命」四個字。</p>
+<h3 id="h-103">原典節譯 ②｜第二版序言，B xvi</h3>
+<blockquote>「直到現在，人們一直假定：我們的一切認識，都必須以對象為準。但是，在這個假定之下，所有想要單靠概念、先天地確定對象的某些事情，以擴展我們認識的嘗試，都沒有成功。」</blockquote>
+<p>— <strong>康德原典節譯，Bxvi</strong>（節選）</p>
+<p><strong>教師解說：</strong>康德質疑的不是「觀察事實應尊重現實」這個常識；他在追問：<strong>當我們希望在經驗之前確定某種對所有經驗對象都成立的原則，為什麼沿著舊方向會卡住？</strong></p>
+<p>先作一個標記：這裡「沒有成功」是康德的診斷；他並未在這一句裡全面證明所有前人哲學一無是處。</p>
+<h3 id="h-113">原典節譯 ③｜接續同段，B xvi</h3>
+<blockquote>「因此，不妨試一試：假定對象必須以我們的認識為準，看看我們在形上學的問題上能否進展得更好。」</blockquote>
+<p>— <strong>康德原典節譯，Bxvi</strong>（節選）</p>
+<p>這裡出現一個非常重要的字：<strong>「試一試」</strong>。</p>
+<p>康德此刻提出的是<strong>改變研究假設的試驗</strong>。他之後需要證明這個假設是否成立，以及成立的確切範圍。</p>
+<h3 id="h-123">兩條思考路線：請先比較</h3>
+<div class="table-wrap"><table><thead><tr><th>路線</th><th>起始假設</th><th>面對的難題／新的可能</th></tr></thead><tbody><tr><td><strong>舊方向（康德的概括）</strong></td><td>所有認識條件都要服從獨立於認識的對象</td><td>我們尚未觀察每個對象，憑什麼先天地知道它們具有什麼？</td></tr><tr><td><strong>新方向（康德的試驗）</strong></td><td>對象<strong>作為可能經驗的對象</strong>，必須符合我們的某些認識條件</td><td>若認識的基本條件可被獨立證成，就可能解釋為何它們適用於所有可能經驗。</td></tr></tbody></table></div>
+<p>這裡的「認識條件」，不等於一個人碰巧相信的任何想法、習慣或偏見。康德要追究的是：<strong>如果我們要經驗一個客觀的世界，哪些結構是不可缺少的？</strong></p>
+<h3 id="h-132">先不要同意：你看到的第一個漏洞是什麼？</h3>
+<p>「只要一個對象能被我們經驗，它就符合我們經驗的條件」，聽起來幾乎是同義反覆。</p>
+<p>但康德還想走得更遠：他要進一步確定<strong>那些條件具體是什麼</strong>，而且不是每個人不同、今天有明天沒有。這一步遠非自明。</p>
+<blockquote><strong>反對意見（供你挑戰）</strong>：即使承認一切經驗都需要某些條件，康德憑什麼知道那一定是空間、時間與他列出的那些範疇，而不是別種條件？</blockquote>
+<p>請把這個問題留到之後的先驗感性論與先驗演繹。這不是挑語病，而是整套方案最關鍵的考驗之一。</p>
+<hr>
+<h2 id="section-5">04｜把原文再讀深一層：不是只有「我們的看法」（約 15 分鐘）</h2>
+<h3 id="h-146">原典節譯 ④｜第二版序言，B xvii</h3>
+<blockquote>「如果直觀必須以對象的性質為準，那麼我看不出我們怎麼能先天地對它有所認識；但是，如果對象——作為感官的對象——必須以我們的直觀能力的性質為準，那麼我很能設想這種可能性。」</blockquote>
+<p>— <strong>康德原典節譯，Bxvii</strong>（節選）</p>
+<p><strong>先把兩個名詞弄清楚：</strong></p>
+<ul>
+<li><strong>直觀（Anschauung）</strong>：在康德這裡，主要指對象被直接給予我們的方式；不是中文日常說的「直覺猜測」。</li>
+<li><strong>感性（Sinnlichkeit）</strong>：我們接受對象給予的能力；下一階段會細讀空間、時間作為其形式的主張。</li>
+<li><strong>知性（Verstand）</strong>：我們使用概念來思考、統一所給內容的能力；後面才會真正討論其範疇。</li>
+</ul>
+<h3 id="h-158">原典節譯 ⑤｜第二版序言，B xvii–xviii</h3>
+<blockquote>「經驗本身是一種需要知性的認識；知性的規則，我必須在對象被給予之前，就先在自身之中預設……因此，一切經驗對象都必須依照這些規則而符合它們。」</blockquote>
+<p>— <strong>康德原典節譯，Bxvii–xviii</strong>（依原文前後連貫節選；省略號表示省略）</p>
+<h3 id="h-164">原典節譯 ⑥｜第二版序言，B xviii</h3>
+<blockquote>「我們對事物能夠先天地認識的，只有我們自己置入其中的部分。」</blockquote>
+<p>— <strong>康德原典節譯，Bxviii</strong>（簡短完整子句）</p>
+<p>這句話很容易被誤讀。我們務必拆成三層：</p>
+<ol>
+<li><strong>經驗帶來材料</strong>：你不能坐在房間裡，光靠先天規則就知道隔壁店今天賣幾顆蘋果。</li>
+<li><strong>認識能力可能具有形式</strong>：經驗對象要成為對我們可辨識、可判斷的對象，可能有若干不取決於個別觀察的必要條件。</li>
+<li><strong>哲學不能只宣告有這些形式</strong>：必須解釋它們究竟是什麼、如何適用於經驗對象，以及不可以推到哪裡去。</li>
+</ol>
+<h3 id="h-176">一個刻意有限的教學類比：遊戲世界與規則</h3>
+<p>在一款棋類遊戲裡，你不需要等每個人下完所有棋局，就知道：<strong>在這個遊戲中，合法的一步棋必須遵守規則</strong>。</p>
+<p>但是你不能因此知道玩家下一步<strong>實際會怎麼走</strong>；更不能宣稱宇宙本身必須按照這盤棋的規則運行。</p>
+<p>這個類比幫助你理解「可能經驗的條件」與「每個具體經驗事實」的差別；不代表人類感性、知性的條件就像棋規那樣任意制定。</p>
+<p><strong>立即檢核</strong>：你能否用自己的話區分以下三件事？</p>
+<ul>
+<li>「所有照片都有拍攝條件。」</li>
+<li>「某張照片拍到了什麼？」</li>
+<li>「所有物自身都只按照相機規則存在。」</li>
+</ul>
+<p>其中哪一句是最明顯的越界？</p>
+<details><summary>揭曉教師答案</summary>
+<p>第三句。前兩句談的是成像條件與實際影像內容；第三句卻把只對成像有關的條件，硬推成獨立於成像的所有事物本身的性質。康德正需要一條嚴格的界線。</p>
+</details>
+<hr>
+<h2 id="section-6">05｜康德的突破，可能也伴隨一個代價（約 12 分鐘）</h2>
+<h3 id="h-202">原著主題｜B xx 的現象與物自身區分</h3>
+<p>康德在第二版序言稍後指出：這個改變思考方式的成果，是先天認識<strong>只適用於現象</strong>，而<strong>物自身</strong>則不因此成為我們已認識的對象。這一段的詳細論證會在後續的「先驗感性論」「現象與本體」出現。<strong>此處為帶出原文要點的教師概述，不是逐字翻譯。</strong></p>
+<h3 id="h-206">不是說「外界根本不存在」</h3>
+<ul>
+<li><strong>現象（Erscheinung）</strong>：事物在我們可能的感性經驗中被給予與認識的方式。</li>
+<li><strong>物自身（Ding an sich）</strong>：事物不依賴我們的認識條件、就其自身而言被思考的面向。</li>
+<li>兩者究竟應理解為「兩個世界」還是「對同一事物的兩種考察方式」？這是後世重要的詮釋爭論，現在不應冒稱已有定論。</li>
+</ul>
+<h3 id="h-212">三個值得攻擊康德的地方</h3>
+<p><strong>反對一｜循環疑慮。</strong> 你說對象必須符合認識條件，然後把你想證明的條件放進定義，豈不是預先保證結論？ <strong>反對二｜心理學疑慮。</strong> 我們會以某種方式思考，不代表外在世界有理由永遠如此。即使全人類認知都相似，也不自動得到哲學上的必然性。 <strong>反對三｜科學變遷疑慮。</strong> 康德深受當時數學、牛頓物理影響；當科學的基本框架改變，他認為「不可缺少」的條件會不會需要重估？</p>
+<p>這些批評不等於已經推翻康德，但都提出了必須回應的要求。<strong>你可以支持休謨、支持現代科學的可修正性，或提出不同方案。</strong></p>
+<hr>
+<h2 id="section-7">06｜你來擔任哲學審查員（約 10–15 分鐘）</h2>
+<h3 id="h-224">測驗 1</h3>
+<p>康德借用哥白尼，重點最接近哪一項？</p>
+<p>A. 既然地球繞太陽，所有知識都由太陽產生。 B. 當舊的解釋假設卡住，可以試著反轉預設的關係，並檢驗新方案。 C. 任何人都能用思想改變客觀物體。</p>
+<details><summary>答案與解析</summary>B。原著說「試一試」，強調的是研究方法上的轉換與檢驗。康德沒有聲稱我們意念能造出任意物體。</details>
+<h3 id="h-233">測驗 2</h3>
+<p>以下何者能從 Bxvi–Bxviii 的研究方案中<strong>直接確定</strong>？</p>
+<p>A. 康德已證明十二範疇全部必然有效。 B. 對象作為我們可能的經驗對象，可能需要遵守認識能力的若干必要條件。 C. 外在世界完全不存在。</p>
+<details><summary>答案與解析</summary>B。這是研究方向；要證明有什麼條件及為何客觀有效，必須繼續讀整本書。</details>
+<h3 id="h-242">測驗 3</h3>
+<p>「帶著假說設計科學實驗」最合理的意思是？</p>
+<p>A. 研究者能保證自己想要的結果。 B. 研究者不需要觀察，只要空想。 C. 研究者先規劃要問什麼，再讓自然提供可能支持或反對的結果。</p>
+<details><summary>答案與解析</summary>C。這是康德援引實驗科學時的重要啟發，不是說理性製造經驗的全部內容。</details>
+<h3 id="h-251">測驗 4</h3>
+<p>哪一句最值得用來<strong>批評</strong>康德？</p>
+<p>A. 即使經驗需要某些條件，也仍要證明那些條件是什麼，且為何具有普遍必然性。 B. 康德主張所有科學家都不需要數據。 C. 康德說只要我希望，咖啡就會變黃金。</p>
+<details><summary>答案與解析</summary>A。這是一項很強的哲學質疑，會導向先驗演繹以及現代讀者對康德的爭論。</details>
+<h3 id="h-260">口頭重建論證</h3>
+<p>試著不用看教材，在一分鐘內補完這四格：</p>
+<ol>
+<li>康德認為當時形上學面臨的困境是：＿＿＿＿</li>
+<li>他借用哥白尼提出的新假說是：＿＿＿＿</li>
+<li>這可能使我們理解先天知識，因為：＿＿＿＿</li>
+<li>然而還必須證明：＿＿＿＿</li>
+</ol>
+<details><summary>教師示範</summary>
+<ol>
+<li>形上學難以找到能獲得共識的科學方法，也難以解釋先天擴展知識的可能性。</li>
+<li>作為可能經驗的對象，對象必須符合我們的某些認識條件。</li>
+<li>如果能確定這些條件是所有經驗對象都必須遵守的，就可能在觀察個別事物之前知道它們。</li>
+<li>那些必要條件到底是什麼、如何證明其客觀有效性，以及為何不能推及物自身。</li>
+</ol>
+</details>
+<hr>
+<h2 id="section-8">07｜回到全書地圖：今天只是開端（約 3 分鐘）</h2>
+<p>你現在應該看得出來，後面不是一堆無關的章節，而是在補齊康德第二版序言發出的承諾：</p>
+<div class="table-wrap"><table><thead><tr><th>課程章節</th><th>它要補上的關鍵環節</th></tr></thead><tbody><tr><td>第 03–05 課</td><td><strong>先天知識</strong>究竟是什麼？為何需要它？</td></tr><tr><td>第 06–09 課：先驗感性論</td><td><strong>空間與時間</strong>是否真的是感性的必要形式？</td></tr><tr><td>第 10–17 課：先驗分析論</td><td><strong>範疇</strong>為何有資格規定可能經驗？</td></tr><tr><td>第 19–21 課：知識界限</td><td>康德何以限制我們對<strong>物自身</strong>的認識？</td></tr><tr><td>第 22–29 課：先驗辯證論</td><td>理性不斷越界時，會產生什麼矛盾？</td></tr></tbody></table></div>
+<h3 id="h-290">本課只要記住三句</h3>
+<ol>
+<li><strong>康德的「哥白尼革命」首先是一項改變思考方向的試驗，不是一句神奇的正確答案。</strong></li>
+<li><strong>它要解釋的是所有可能經驗的條件，而不是為任意主觀想像開綠燈。</strong></li>
+<li><strong>它能否成功，取決於後續對空間、時間、範疇與認識界限的證明。</strong></li>
+</ol>
+<h3 id="h-295">我的哲學筆記</h3>
+<p>請在互動版或自己的筆記記下：</p>
+<ul>
+<li>今天我覺得最有說服力的原典段落：</li>
+<li>我最不相信康德的一點：</li>
+<li>如果要我自己設計一個取代康德的解法，我會提出：</li>
+</ul>
+<hr>
+<h2 id="section-9">原典與延伸閱讀</h2>
+<p><strong>主要原典（德文全文，供查核；本課正文已翻譯成中文）</strong></p>
+<ul>
+<li><a href="https://github.com/wellwellxd/kant-works/blob/main/純粹理性批判/原文/Kant_KrV_B_1787_de.txt" target="_blank" rel="noopener">1787 年 B 版全文（本 Repository）</a></li>
+<li><a href="https://www.gutenberg.org/ebooks/6343" target="_blank" rel="noopener">Project Gutenberg 1787 年 B 版來源</a></li>
+<li><a href="https://hoegelbianca.net/archiv/kant/kritik_der_reinen_vernunft/vorrede_zur_zweiten_auflage.html" target="_blank" rel="noopener">康德第二版序言德文校核文本</a></li>
+</ul>
+<p><strong>外部學術背景（選讀，不是必讀德文／英文作業）</strong></p>
+<ul>
+<li><a href="https://plato.stanford.edu/entries/kant/" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy：康德與「哥白尼式轉向」</a></li>
+<li><a href="https://plato.stanford.edu/entries/kant-transcendental-idealism/" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy：先驗唯心論的詮釋爭議</a></li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Copernican_heliocentrism_theory_diagram.svg" target="_blank" rel="noopener">歷史圖像：1543 年哥白尼日心系統圖（Wikimedia Commons，公有領域）</a></li>
+</ul>
+<p><strong>節譯說明</strong>：以上標示「原典節譯」的中文，為本教材依康德公共領域德文第二版所作的獨立翻譯。為了能在手機上一段一段細讀，選用了有標示出處的短段落；略去之處明示為節選或省略，不代表完整原文。對康德的例子、反對與當代延伸，都以教師解說標註而非冒充引文。</p></article>
+<section class="test" aria-label="互動練習"><h2>🎯 第二課互動理解測驗</h2><p>每題都可以重試，不為答錯扣分。請先自己決定立場。</p><div class="quiz" data-answer="b" data-explain="康德藉用的是更換解釋假設的研究策略，不是說思想能直接改造任意外物。"><fieldset><legend>1. 康德借用哥白尼的核心理由是什麼？</legend><label class="option"><input name="q1" type="radio" value="a"> 用意念改變客觀世界</label><label class="option"><input name="q1" type="radio" value="b"> 舊假設難以解釋時，試著反轉研究方向並檢驗</label><label class="option"><input name="q1" type="radio" value="c"> 讓哲學變成天文學</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+<div class="quiz" data-answer="c" data-explain="這是提議。後續先驗感性論與先驗演繹才要說明具體條件及有效性。"><fieldset><legend>2. 第二版序言的「試一試」意味著什麼？</legend><label class="option"><input name="q2" type="radio" value="a"> 已證明所有先天範疇有效</label><label class="option"><input name="q2" type="radio" value="b"> 哲學問題不需要證明</label><label class="option"><input name="q2" type="radio" value="c"> 一個尚需後續論證的研究方案</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+<div class="quiz" data-answer="a" data-explain="帶著問題與安排控制變項，不等於創造觀察到的結果。"><fieldset><legend>3. 為什麼康德拿科學實驗舉例？</legend><label class="option"><input name="q3" type="radio" value="a"> 研究者可帶著問題設計檢驗，但仍要聽自然的回答</label><label class="option"><input name="q3" type="radio" value="b"> 研究者想要什麼結果就會有什麼結果</label><label class="option"><input name="q3" type="radio" value="c"> 科學不需要經驗資料</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div>
+<div class="quiz" data-answer="c" data-explain="康德主張涉及作為經驗對象的事物；它並不准許把經驗條件直接強加於獨立於認識的物自身。"><fieldset><legend>4. 「經驗對象受認識條件限制」可以直接推出什麼？</legend><label class="option"><input name="q4" type="radio" value="a"> 外在事物並不存在</label><label class="option"><input name="q4" type="radio" value="b"> 物自身必然符合我們全部的主觀喜好</label><label class="option"><input name="q4" type="radio" value="c"> 認識條件的適用範圍需要嚴格區分，不能直接推及物自身</label></fieldset><button type="button" class="primary">檢查這一題</button><div class="feedback" role="status" aria-live="polite" hidden></div></div></section>
+<section class="notebook" id="notes"><h2>✎ 我的第二課哲學筆記</h2><p>只要留下一個真正困擾你的問題，就值得。這不是交作業。</p><textarea id="myNote" aria-label="個人課程筆記" placeholder="康德這次轉向讓我最不確定的是……&#10;&#10;如果我要反對康德，我會說……&#10;&#10;下次我要問……"></textarea><div class="notehelp" id="noteStatus">筆記只存在這部裝置的此瀏覽器，不會同步到 GitHub。瀏覽器清除網站資料可能遺失。</div><button type="button" id="copy" class="primary">複製我的筆記</button></section>
+</main><footer><p><a href="../../">← 課程首頁</a>　 ·　 <a href="../01/">← 回到第一課</a></p>本教材為哲學教學用自行節譯；不取用受保護的當代中文出版譯文。原典引用頁碼 Bxiii、Bxvi–Bxviii、Bxx；資料來源與延伸連結見正文。單檔 HTML 可離線開啟，外部原典連結需要網路。</footer>
+<script>
+(function(){
+const root=document.documentElement;
+const progress=document.getElementById('progress');
+function updateProgress(){let m=document.documentElement.scrollHeight-innerHeight;progress.style.width=(m<=0?100:Math.min(100,Math.max(0,100*scrollY/m)))+'%';}
+addEventListener('scroll',updateProgress,{passive:true});addEventListener('resize',updateProgress);updateProgress();
+let size=18;
+document.getElementById('larger').addEventListener('click',()=>{size=Math.min(24,size+1);root.style.setProperty('--fs',size+'px')});
+document.getElementById('smaller').addEventListener('click',()=>{size=Math.max(15,size-1);root.style.setProperty('--fs',size+'px')});
+document.getElementById('jumpNotes').addEventListener('click',()=>document.getElementById('notes').scrollIntoView({behavior:'smooth'}));
+document.querySelectorAll('.quiz').forEach(box=>{box.querySelector('button').addEventListener('click',()=>{const ans=box.querySelector('input:checked'),out=box.querySelector('.feedback');out.hidden=false;if(!ans){out.textContent='請先選一個答案，再檢查。';return;}out.textContent=(ans.value===box.dataset.answer?'✓ 你抓到關鍵了。 ':'再想想： ')+box.dataset.explain;});});
+
+const old=document.getElementById('old'),newButton=document.getElementById('new'),output=document.getElementById('modelAnswer');
+const line=document.getElementById('arrowLine'),tip=document.getElementById('arrowTip'),svg=document.getElementById('modelSvg');
+function drawModel(isNew){
+ old.classList.toggle('active',!isNew);newButton.classList.toggle('active',isNew);
+ old.setAttribute('aria-pressed',String(!isNew));newButton.setAttribute('aria-pressed',String(isNew));
+ line.setAttribute('d',isNew?'M 126 57 L 194 57':'M 194 57 L 126 57');
+ tip.setAttribute('d',isNew?'M 185 49 L 194 57 L 185 65':'M 128 49 L 119 57 L 128 65');
+ svg.setAttribute('aria-label',isNew?'認識條件指向可經驗的對象':'對象指向認識能力');
+ output.innerHTML=isNew?'<strong>新方向：可經驗的對象必須符合認識條件</strong><p>康德問：若能證明某些形式是所有可能經驗的必要條件，是否就能先天地知道所有經驗對象都符合它們？注意：這些條件仍要證明。</p>':'<strong>舊方向：認識須符合獨立的對象</strong><p>如果先把對象當成完全獨立於我們認識方式的已知物，怎麼能在尚未經驗它們之前，確定它們必須具有哪些性質？</p>';
+}
+old.addEventListener('click',()=>drawModel(false));newButton.addEventListener('click',()=>drawModel(true));
+
+const area=document.getElementById('myNote'),status=document.getElementById('noteStatus'),key='kant_krv_lesson02_note_v1';
+try{area.value=localStorage.getItem(key)||'';area.addEventListener('input',()=>{localStorage.setItem(key,area.value);status.textContent='已儲存於這部裝置的瀏覽器（不會同步到 GitHub）。';});}catch(e){status.textContent='此瀏覽器目前不允許儲存，請使用下方複製功能保存筆記。';}
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(area.value);status.textContent='筆記已複製。'}catch(e){area.focus();area.select();status.textContent='請長按選取文字並複製。';}});
+})();
+</script>
+</body></html>
